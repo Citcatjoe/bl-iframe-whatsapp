@@ -54,17 +54,6 @@
 }
 
 @font-face {
-  font-family: "GoodBlackItalic";
-  src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.eot) format("eot");
-  src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.woff) format("woff");
-  src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.woff2) format("woff2");
-  src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.ttf) format("truetype");
-  font-display: swap;
-  font-style: italic;
-  font-weight: 800;
-  font-weight: bolder;
-}
-@font-face {
   font-family: "GoodBold";
   src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.eot) format("eot");
   src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.woff) format("woff");
@@ -75,32 +64,47 @@
   font-weight: 600 700;
   font-weight: bold;
 }
-h1 {
-  font-family: "GoodBlackItalic", "Arial Narrow", Impact, sans-serif;
-  font-style: italic;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-style: italic;
-  font-size: 81px !important;
-  line-height: 97px;
-  font-weight: bolder;
-  text-shadow: 5px 5px #77B7E5 !important;
+@font-face {
+  font-family: "GoodNarrowMedium";
+  src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-NarrowMedium.eot) format("eot");
+  src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-NarrowMedium.woff) format("woff");
+  src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-NarrowMedium.woff2) format("woff2");
+  src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-NarrowMedium.ttf) format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  font-weight: normal;
 }
-
-h2 {
+h1 {
   font-family: "GoodBold", "Arial Narrow", Impact, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px !important;
-  line-height: 26px;
-  color: black;
-  border-left: 8px solid #1374B7;
-  padding-left: 15px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-@media (min-width: 768px) {
+
+h2 {
+  font-family: "GoodNarrowMedium", "Arial Narrow", Impact, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2509803922);
+  text-align: center;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 576px) {
   h2 {
-    font-size: 22px !important;
-    line-height: 28px;
+    text-align: left;
+    left: 1rem;
+    transform: none;
+    font-size: 20px !important;
+    line-height: 1.2;
   }
 }
 
@@ -289,20 +293,85 @@ header.headroom--unpinned {
   transition: all 0.2s;
 }
 
-.yuh {
+.brand {
+  height: auto;
+  width: 100%;
   height: 100%;
-  background: url("../img/this/bg-coins.png"), linear-gradient(320deg, #98CDF2 0%, #D9DAE5 100%);
-  background-size: 100%;
+  background: url("../img/this/bg.png"), linear-gradient(320deg, #98CDF2 0%, #D9DAE5 100%);
+  background-size: auto 100%;
   border-radius: 0;
 }
-@media (min-width: 768px) {
-  .yuh {
+@media (min-width: 576px) {
+  .brand {
+    aspect-ratio: initial;
     width: 100%;
     height: 100%;
-    background: url("../img/this/bg-coins.png"), linear-gradient(320deg, #98CDF2 0%, #D9DAE5 100%);
-    background-size: 100%;
-    border-radius: 8px;
+    background-size: cover;
   }
+}
+@media (min-width: 768px) {
+  .brand {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+  }
+}
+
+.phone {
+  left: 50%;
+  top: 33.33333%;
+  transform: translateX(-50%);
+  width: 260px;
+}
+@media (min-width: 576px) {
+  .phone {
+    left: auto;
+    top: 20px;
+    right: 42px;
+    transform: none;
+    width: 254px !important;
+  }
+}
+@media (min-width: 768px) {
+  .phone {
+    width: 328px !important;
+    right: 15%;
+  }
+}
+
+@media (min-width: 576px) {
+  .wording2 {
+    display: none;
+  }
+}
+
+.wording2b {
+  display: none;
+}
+@media (min-width: 576px) {
+  .wording2b {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) {
+  .arrow {
+    display: none;
+  }
+}
+
+.arrow2 {
+  display: none;
+}
+@media (min-width: 576px) {
+  .arrow2 {
+    display: block;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0.3px 0.8px 2.2px rgba(0, 0, 0, 0.02), 0.8px 1.9px 5.3px rgba(0, 0, 0, 0.028), 1.5px 3.5px 10px rgba(0, 0, 0, 0.035), 2.7px 6.3px 17.9px rgba(0, 0, 0, 0.042), 5px 11.7px 33.4px rgba(0, 0, 0, 0.05), 12px 28px 80px rgba(0, 0, 0, 0.07);
 }
 
 .red-line {
@@ -459,216 +528,6 @@ header.headroom--unpinned {
   top: -100%;
 }
 
-.scroller {
-  transition: all 1.2s;
-}
-.scroller.is-visible {
-  opacity: 1;
-  transition: all 1.2s;
-}
-
-.mouse {
-  background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
-  position: relative;
-  width: 26px;
-  height: 44px;
-  border-radius: 100px;
-  background-size: 100% 200%;
-  animation: colorSlide 10s linear infinite, nudgeMouse 10s ease-out infinite;
-}
-.mouse:before, .mouse:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
-.mouse:before {
-  width: 24px;
-  height: 42px;
-  background-color: #202124;
-  border-radius: 100px;
-}
-.mouse:after {
-  background-color: #ffffff;
-  width: 5px;
-  height: 5px;
-  border-radius: 100%;
-  animation: trackBallSlide 10s linear infinite;
-}
-
-@keyframes colorSlide {
-  0% {
-    background-position: 0% 100%;
-  }
-  20% {
-    background-position: 0% 0%;
-  }
-  21% {
-    background-color: #4e5559;
-  }
-  29.99% {
-    background-color: #ffffff;
-    background-position: 0% 0%;
-  }
-  30% {
-    background-color: #4e5559;
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 0% 0%;
-  }
-  51% {
-    background-color: #4e5559;
-  }
-  59% {
-    background-color: #ffffff;
-    background-position: 0% 0%;
-  }
-  60% {
-    background-color: #4e5559;
-    background-position: 0% 100%;
-  }
-  80% {
-    background-position: 0% 0%;
-  }
-  81% {
-    background-color: #4e5559;
-  }
-  90%, 100% {
-    background-color: #ffffff;
-  }
-}
-@keyframes trackBallSlide {
-  0% {
-    opacity: 1;
-    transform: scale(1) translateY(-10px);
-  }
-  6% {
-    opacity: 1;
-    transform: scale(0.9) translateY(2.5px);
-  }
-  14% {
-    opacity: 0;
-    transform: scale(0.2) translateY(20px);
-  }
-  15%, 19% {
-    opacity: 0;
-    transform: scale(0.2) translateY(-10px);
-  }
-  28%, 29.99% {
-    opacity: 1;
-    transform: scale(1) translateY(-10px);
-  }
-  30% {
-    opacity: 1;
-    transform: scale(1) translateY(-10px);
-  }
-  36% {
-    opacity: 1;
-    transform: scale(0.9) translateY(2.5px);
-  }
-  44% {
-    opacity: 0;
-    transform: scale(0.2) translateY(20px);
-  }
-  45%, 49% {
-    opacity: 0;
-    transform: scale(0.2) translateY(-10px);
-  }
-  58%, 59.99% {
-    opacity: 1;
-    transform: scale(1) translateY(-10px);
-  }
-  60% {
-    opacity: 1;
-    transform: scale(1) translateY(-10px);
-  }
-  66% {
-    opacity: 1;
-    transform: scale(0.9) translateY(2.5px);
-  }
-  74% {
-    opacity: 0;
-    transform: scale(0.2) translateY(20px);
-  }
-  75%, 79% {
-    opacity: 0;
-    transform: scale(0.2) translateY(-10px);
-  }
-  88%, 100% {
-    opacity: 1;
-    transform: scale(1) translateY(-10px);
-  }
-}
-@keyframes nudgeMouse {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(8px);
-  }
-  30% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(8px);
-  }
-  60% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(8px);
-  }
-  90% {
-    transform: translateY(0);
-  }
-}
-@keyframes nudgeText {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(2px);
-  }
-  30% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(2px);
-  }
-  60% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(2px);
-  }
-  90% {
-    transform: translateY(0);
-  }
-}
-@keyframes colorText {
-  21% {
-    color: #4e5559;
-  }
-  30% {
-    color: #ffffff;
-  }
-  51% {
-    color: #4e5559;
-  }
-  60% {
-    color: #ffffff;
-  }
-  81% {
-    color: #4e5559;
-  }
-  90% {
-    color: #ffffff;
-  }
-}
 html {
   scroll-behavior: smooth;
 }

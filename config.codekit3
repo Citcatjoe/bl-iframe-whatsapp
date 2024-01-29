@@ -2000,11 +2000,50 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/this\/arrow.png" : {
+      "ft" : 32768,
+      "iS" : 6328,
+      "oA" : 0,
+      "oAP" : "\/img\/this\/arrow.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/this\/arrow2.png" : {
+      "ft" : 32768,
+      "iS" : 2228,
+      "oA" : 0,
+      "oAP" : "\/img\/this\/arrow2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/this\/bg-coins.png" : {
       "ft" : 32768,
       "iS" : 169800,
       "oA" : 0,
       "oAP" : "\/img\/this\/bg-coins.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/this\/bg.png" : {
+      "ft" : 32768,
+      "iS" : 629973,
+      "oA" : 0,
+      "oAP" : "\/img\/this\/bg.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2083,6 +2122,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/this\/iphone.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/this\/iphone.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/this\/logo-yuh-bg-rose.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -2105,6 +2154,29 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/img\/this\/qr-code.png" : {
+      "ft" : 32768,
+      "iS" : 22271,
+      "oA" : 0,
+      "oAP" : "\/img\/this\/qr-code.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/this\/qr-code.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/this\/qr-code.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/img\/this\/wave-mobile.png" : {
       "ft" : 32768,
@@ -7456,8 +7528,8 @@
   },
   "projectAttributes" : {
     "creationDate" : 708512052.04224896,
-    "displayValue" : "bl-iframe-yuh-teaser-2",
-    "displayValueWasSetByUser" : 0,
+    "displayValue" : "bl-iframe-whatsapp",
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
   },

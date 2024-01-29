@@ -5,12 +5,31 @@
     setTimeout(function() { 
         $('body').addClass('is-visible');
         // window.scrollTo(0, 0);
+        setTimeout(function() { 
+         qrCodeTl.play();
+      }, 200);
     }, 1000);
 
 
-
+    // INIT CONTROLLER
+	  var controller = new ScrollMagic.Controller();
+    var $qrCode = $('.qr-code');
+    var $h2 = $('h2');
     
+    clearQr();
+    function clearQr(){
+        //alert('lol');
+        var clearQrTl = new TimelineMax();
+        clearQrTl
+            .set($qrCode, { autoAlpha: 0, y: "+=10px", transformOrigin: "center center" })
+            .set($h2, { autoAlpha: 0, y: "+=10px", transformOrigin: "center center" });
+        return clearQrTl;
+    }
 
+    var qrCodeTl = new TimelineMax({ paused: true })
+        .to($qrCode,1, { autoAlpha: 1, y: "-=10px", ease: Power4.easeInOut })
+        .to($h2,1, { autoAlpha: 1, y: "-=10px", ease: Power4.easeInOut });
+       
 
 
 
