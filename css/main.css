@@ -142,7 +142,8 @@ p {
 blockquote {
   font-family: poppins;
   border-style: solid;
-  border-image: linear-gradient(to bottom, #ff2727, #ffffff) 1 100%;
+  -o-border-image: linear-gradient(to bottom, #ff2727, #ffffff) 1 100%;
+     border-image: linear-gradient(to bottom, #ff2727, #ffffff) 1 100%;
   border-right: 0;
 }
 
@@ -567,6 +568,4 @@ body.is-visible {
   .desktop-hidden {
     display: none;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
