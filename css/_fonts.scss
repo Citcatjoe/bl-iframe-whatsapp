@@ -1,33 +1,32 @@
+
+
 @font-face {
-    font-family: 'GoodBold';
-    src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.eot) format('eot');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.woff) format('woff');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.woff2) format('woff2');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.ttf) format('truetype');
-    font-display: swap;
-    font-style: normal;
-    font-weight: 600 700;
+    font-family: 'Good Offc';
+    src: url('../fonts/GoodOffc-Bold.woff2') format('woff2'),
+        url('../fonts/GoodOffc-Bold.woff') format('woff');
     font-weight: bold;
-    }
-    @font-face {
-        font-family: 'GoodNarrowMedium';
-        src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-NarrowMedium.eot) format('eot');
-        src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-NarrowMedium.woff) format('woff');
-        src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-NarrowMedium.woff2) format('woff2');
-        src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-NarrowMedium.ttf) format('truetype');
-        font-display: swap;
-        font-style: normal;
-        font-weight: 500;
-        font-weight: normal;
-        }
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Good Offc Narr';
+    src: url('../fonts/GoodOffc-Narr.woff2') format('woff2'),
+        url('../fonts/GoodOffc-Narr.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 h1
 {
 
-    font-family: 'GoodBold', 'Arial Narrow', Impact, sans-serif;
+    font-family: 'Good Offc', 'Arial Narrow', Impact, sans-serif;
     font-style: normal;
-    font-weight: bold;
     text-shadow: 0px 3px 6px #00000080;
+    line-height: 1.1 !important;
 
     // font-family: 'GoodBlackItalic', 'Arial Narrow', Impact, sans-serif;
     // font-style: italic;
@@ -43,14 +42,15 @@ h1
    
 }
 
+
 h2 
 {
-    font-family: 'GoodNarrowMedium', 'Arial Narrow', Impact, sans-serif;
+    font-family: 'Good Offc Narr', 'Arial Narrow', Impact, sans-serif;
     font-style: normal;
     font-weight: normal;
     text-shadow: 0px 3px 6px #00000040;
     text-align: center;
-    bottom: 1rem;
+    bottom: 0.5rem;
     left: 50%;
     transform: translateX(-50%); 
     font-size: 17px !important;
@@ -66,7 +66,11 @@ h2
         transform: none;
         font-size: 20px !important;
         line-height: 1.2
+
+    
     };
+
+    
 }
 
 span.txt

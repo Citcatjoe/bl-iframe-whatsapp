@@ -2,23 +2,16 @@
 
 <!DOCTYPE HTML>
 
-<html lang="fr" class="h-full relative overflow-hidden"> 
+<html lang="fr" class="relative overflow-hidden"> 
 	<head>
 		<script src="https://cdn.tailwindcss.com"></script>  
-		<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> -->
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 
-		{# <?php include 'hb_card_tp.php'; ?> #}
 		{{ block('head_brand') }}   
 		
 	</head>
-	{# {{ block('frame') }} #}
-	<body class="bg-white h-full"> 
+	<body class="bg-white"> 
 		
 		<!-- {{ block('loading_overlay') }} -->
 	
@@ -29,26 +22,7 @@
 		
 		
 
-		{# ------------------------------------------------------------------------ #}
-		{# HERO 50/50 NOT BOXED #}
-		{# <div style="background: transparent linear-gradient(60deg, #C4C5A8 0%, #E3E3D8 100%) 0% 0% no-repeat padding-box;">
-		<div class="hero container max-w-screen-2xl md:flex flex-row-reverse">
-			<div class=" w-full md:w-1/2">
-				<figure class="w-full h-full float-right bg-bottom bg-cover relative pt-12 md:pt-0 pb-6 md:pb-0">
-					<img src="img/this/hero-img.png" alt="Image d'illustration, Nespresso durable" class="mx-auto md:left-0 w-4/6 md:w-4/6 md:absolute md:top-1/2 md:-translate-y-1/2">
-				</figure>
-			</div>
-			<div class="w-full md:w-1/2 relative">
-				<div class="md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:w-5/6 pl-4 md:pl-8 pr-4 md:pr-0 text-center md:text-left">
-					<h3 class="w-full text-lg md:text-xl mb-2 md:mb-8 font-light">Impact environnemental</h3>
-					<h1 class="text-gradient text-4xl md:text-7xl font-semibold mb-8 md:mb-10">Le café en capsules serait plus durable qu'on le pense</h1>
-					
-					{{ block('sponsor_bar') }}
-				</div>
-			</div>
-		</div>
-		</div> #}
-		{# ------------------------------------------------------------------------ #}
+		
 		
 		{# <a href="https://www.blick.ch/fr/news/economie/" target="_parent"> #}
 			<div class="brand flex bg-gray-200 overflow-hidden relative">
@@ -68,9 +42,12 @@
 				
 				<div class="phone absolute bottom-0">
 					<img src="img/this/iphone.svg">
-					<a href="https://whatsapp.com/channel/0029VaANd6l6rsQm2L4k2A1A" target="_blank">
-						<img src="img/this/qr-code.png" class="qr-code absolute left-1/2 -translate-x-1/2 w-3/5 top-14">
+					<a href="whatsapp://channel/0029VaANd6l6rsQm2L4k2A1A" target="_blank">
+						<img src="img/this/qr-code.png" class="qr-code absolute left-1/2 -translate-x-1/2 top-14">
 					</a>
+					<!-- <a href="https://whatsapp.com/channel/0029VaANd6l6rsQm2L4k2A1A" target="_blank">
+						<img src="img/this/qr-code.png" class="qr-code absolute left-1/2 -translate-x-1/2 w-3/5 top-14">
+					</a> -->
 				</div>
 				{# <span class="red-line absolute"></span> #}
 				{# <img src="img/blick.svg" alt="" class="logo-blick-2 absolute"> #}
